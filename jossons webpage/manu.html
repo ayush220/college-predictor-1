@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Manchester United</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #111;
+  }
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+      -webkit-filter: grayscale(90%);
+      filter: grayscale(30%); /* make all photos black and white */ 
+     width: 110%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }  
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #e00b0b;
+      border: 0;
+      font-size: 16px !important;
+      letter-spacing: 2px;
+      opacity: 1;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+
+.container-fluid {
+      padding: 25px 50px
+}
+	  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><b>Manchester United</b></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">TOUR</a></li>
+        <li><a href="#  ">PLAYER</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+    </ol>
+
+   
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="image/manu.jpg" alt="manu" width="1200" height="700">
+        <div class="carousel-caption">
+          
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="image/manu3.jpg" alt="manu3" width="1200" height="700">
+        <div class="carousel-caption">
+          
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="image/manu4.jpg" alt="manu4" width="1200" height="700">
+        <div class="carousel-caption">
+          
+        </div>      
+      </div>
+    </div>
+</div>
+
+
+<div id="about" class="container text-center">
+  <h3>THE MANCHESTER UNITED</h3>
+  <p><em>We are United!</em></p>
+  <p>Manchester United Football Club, commonly known as Man. United or simply United, is a professional football club based in Old Trafford, Greater Manchester, England, that competes in the Premier League, the top flight of English football. Nicknamed "the Red Devils", the club was founded as Newton Heath LYR Football Club in 1878, changed its name to Manchester United in 1902 and moved to its current stadium, Old Trafford, in 1910.</p>
+  <br>
+  
+  </div>
+</div>
+
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">UPCOMING FIXTURES</h3>
+    <ul class="list-group">
+      <li class="list-group-item"><strong>Sat 22 Sep | English Premier League</strong> <span class="badge">Arsenal v/s Manchester United.</span></li></li>
+      <li class="list-group-item"><strong>Wed 26 Sep | English League Cup</strong> <span class="badge"> Manchester United v/s Chelsea.</span></li></li> 
+      <li class="list-group-item"><strong>Sat 29 Sep | English Premier League</strong> <span class="badge"> manchester city v/s Manchester United.</span></li> 
+    </ul>   
+  </div>
+</div>
+
+<div id="player" class="container-fluid text-center">
+  <h2> Players</h2>
+  <hr>
+  <br>
+  <div class="row ">
+    <div class="col-sm-3">
+      <img src="image/gea.jpg" class="img-circle" alt="David">
+	  <br>
+	  
+	  <br>
+	  David De Gea
+      <p>GoalKeeper</p>
+    </div>
+    <div class="col-sm-3">
+      <img src="image/pogba.jpg" class="img-circle" alt="Pogba">
+	  <br>
+	  <br>
+      Paul Pogba
+      <p>Midfielder</p>
+    </div>
+    <div class="col-sm-3">
+      <img src="image/lukaku.jpg" class="img-circle" alt="lukaku">
+	  <br>
+	  <br>
+  Romelu Lukaku
+      <p>Striker</p>
+    </div>
+	<div class="col-sm-3">
+      <img src="image/sanchez.jpg" class="img-circle" alt="alexiz">
+	  <br>
+	  <br>
+      Alexis Sanchez
+      <p>Forward</p>
+  </div><hr>
+  <br><br>
+
+  <div class="row ">
+	  </div>
+    <div class="col-sm-3">
+      <img src="image/rash.jpg" class="img-circle" alt="rash">
+	  <br>
+	  <br>
+      Marcus Rashford
+      <p>Forward</p>
+    </div>
+    <div class="col-sm-3">
+      <img src="image/luke.jpg" class="img-circle" alt="shaw">
+	  <br>
+	  <br>
+     Luke Shaw
+      <p>Defender</p>
+	  </div>
+	  <div class="col-sm-3">
+      <img src="image/martial.jpg" class="img-circle" alt="martial">
+	  <br>
+	  <br>
+      Anthony Martial
+      <p>Forward</p>
+    </div>
+   <div class="row ">
+    <div class="col-sm-3">
+      <img src="image/lingard.jpg" class="img-circle" alt="lingard">
+	  <br>
+	  <br>
+	 Jesse Lingard
+      <p>Mid-fielder</p>
+    </div>
+	<br><br><br>
+    <div class="col-sm-3">
+      <img src="image/bailly.jpg" class="img-circle" alt="eric">
+	  <br>
+	  <br>
+	 
+      Eric Bailly
+      <p>Defender</p>
+    </div>
+    <div class="col-sm-3">
+      <img src="image/mata.jpg" class="img-circle" alt="mata">
+	  <br>
+	  <br>
+      Juan Mata
+      <p>Mid-fielder</p>
+    </div>
+    <div class="col-sm-3">
+      <img src="image/valencia.jpg" class="img-circle" alt="valenica">
+	  <br>
+	  <br>
+      Anthony Valencia
+      <p>Defender</p>
+	  </div>
+	  <div class="col-sm-3">
+      <img src="image/herrera.jpg" class="img-circle" alt="ander">
+	  <br>
+	  <br>
+	  
+    Ander Herrera
+      <p>Mid-fielder</p>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  
+  
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
