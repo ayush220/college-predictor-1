@@ -59,13 +59,37 @@
             <center><input type="submit" name="login" value="Login"></center>
     
             <a href="#">Forgot password?</a><br>
-            <a href="#">Don't have an account?</a>
+            <a href="#" data-toggle="modal" data-target="#mymodal">Don't have an account?</a>
         </form>
     </div>    
         
-        
-        
-        
+        <div class="modal fade" id="mymodal">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                Sign Up
+                </div>
+            </div>
+                
+            <div class="modal-body">
+                <p>Email</p>
+                <input type="text" name="email" placeholder="Enter Email" required autofocus>
+                <p>Username</p>
+                <input type="text" name="username" placeholder="Enter Username" required>
+                <p>Password</p>
+                <input type="password" name="pwd" placeholder="Enter Password">
+                <p>Confirm Password</p>
+                <input type="password" name="cnfpwd" placeholder="Confirm Password">
+            </div>
+                
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Create Account</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+            </div>
+            </div>
         
     </body>
 </html>
