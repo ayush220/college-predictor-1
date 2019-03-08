@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<script language="JavaScript">
+function getOptions(college) {
+	var list;
+	var listValue;
+	if (college == "iit") {
+		list = new Array("Indian Institute of Technology POWAI","Indian Institute of Technology MADRAS","Indian Institute of Technology DELHI","Indian Institute of Technology KHARAGPUR","Indian Institute of Technology KANPUR","Indian Institute of Technology ROORKEE","Indian Institute of Technology GUWHATI","Indian Institute of Technology DHANBAD","Indian Institute of Technology INDORE","Indian Institute of Technology GANDHINAGAR","Indian Institute of Technology JODHPUR","Indian Institute of Technology ROPAR","Indian Institute of Technology MANDI","Indian Institute of Technology VARANASI","Indian Institute of Technology PATNA","Indian Institute of Technology BHILAI","Indian Institute of Technology BHUBNESHWAR","Indian Institute of Technology HYDERABAD","Indian Institute of Technology GOA","Indian Institutes of Technology TIRUPATI","Indian Institutes of Technology PALAKKAD");
+		listValue = new Array("powai","madras","delhi","kharagpur","kanpur","roorkee","guwhati","dhanbad","indore","gandhinagar","jodhpur","ropar","mandi","varanasi","patna","bhilai","bhubneshwar","hyderabad","goa","tirupati","palakkad");
+	}
+	if (college == "nit") {
+		list = new Array("NIT TRICHY","NIT WARANGAL","NIT SURATHKAL","NIT NAGPUR");
+		listValue = new Array("trichy","warangal","surathkal","nagpur");
+	}
+	if (college == "iiit") {
+		list = new Array("IIIT HYDERABAD","IIIT NAGPUR","IIIT GWALIOR");
+		listValue = new Array("hyderabad","nagpur","gwalior");
+	}
+	for (var i = 0; i < document.OptionMaker.college.length; i++) { //Clear the 2nd menu
+		document.OptionMaker.ini.options[i] = null;
+	}
+	for (var i = 0; i < list.length; i++) { //Repopulate 2nd menu
+		document.OptionMaker.ini.options[i] = new Option(list[i],listValue[i],0,0);
+	}
+}
+</script>
+<title>Dynamic Options</title>
+</head>
+
+<body>
+
+<form name="OptionMaker">
+  <p><select size="5" name="college" onchange="getOptions(this.value)">
+    <option value="iit">IITs</option>
+    <option value="nit">NITs</option>
+    <option value="iiit">IIITs</option>
+  </select>&nbsp;&nbsp;&nbsp;&nbsp; <select size="5" name="ini" onclick="nitrt(this.value)">
+  </select></p>
+</form>
+
+</body>
+
+</html>
